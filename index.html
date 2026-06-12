@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Demo - Thank You!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="title">Thank You Guys for Watching My Product Demo!</h1>
+            <p class="subtitle">Welcome to an interactive journey of discovery</p>
+        </div>
+
+        <div class="interactive-section">
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h2>Beautiful Design</h2>
+                    <p>Crafted with elegance and care for every detail</p>
+                    <button class="card-btn" onclick="showMessage('Design Philosophy: Less is more, elegance is timeless.')">Learn More</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h2>Lightning Fast</h2>
+                    <p>Performance optimized for the best user experience</p>
+                    <button class="card-btn" onclick="showMessage('Speed is our priority: Every millisecond counts.')">Learn More</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <h2>Secure & Reliable</h2>
+                    <p>Your trust is our greatest treasure</p>
+                    <button class="card-btn" onclick="showMessage('Security First: Your data is protected with care.')">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-number">01</div>
+                    <h3>Interactive UI</h3>
+                    <p>Click and explore - everything is designed to be intuitive</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-number">02</div>
+                    <h3>Responsive</h3>
+                    <p>Works beautifully on all devices, from mobile to desktop</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-number">03</div>
+                    <h3>Animations</h3>
+                    <p>Smooth, delightful animations that bring joy to interaction</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-number">04</div>
+                    <h3>Modern Tech</h3>
+                    <p>Built with pure HTML, CSS, and JavaScript - no dependencies</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Begin?</h2>
+            <button class="cta-button" onclick="triggerConfetti()">Click for a Surprise!</button>
+        </div>
+
+        <div class="message-popup" id="messagePopup">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closeMessage()">&times;</button>
+                <p id="messageText"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
